@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(144, 55, 62, 0.97);
+    background-image: url("../images/background-flower.png");
+    font-family: "chsj", serif;
+    font-weight: 300;
+    word-spacing: 40px
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    /*background-image: url("../images/yellow.png");*/
+    /*background-size: 100% 100%;*/
+    /*background-repeat: no-repeat;*/
+}
+
+.back {
+    /*margin-left: 2.5%;*/
+    width: 6.5%;
+    height: 100%;
+    /*float: left;*/
+    position: absolute;
+}
+
+.back img {
+    width: 90%;
+    height: 19%;
+    position: relative;
+    top: 80%;
+    left: 35%;
+    cursor: pointer;
+}
+
+.row1 {
+    width: 17%;
+    height: 100%;
+    margin-left: 13%;
+    /*margin-top: 1.5%;*/
+    float: left;
+    background-color: rgba(39, 35, 49, 0.97);
+    cursor: pointer;
+}
+
+.row1 .image {
+    width: 85%;
+    height: 97%;
+    margin-top: 10%;
+    margin-left: 7.5%;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: 1s;
+}
+
+.yfront {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.yback {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotateY(-90deg);
+}
+
+.yback img {
+    width: 100%;
+    height: 100%;
+}
+
+.yfront img {
+    width: 100%;
+    height: 100%;
+}
+
+.image:hover {
+    transform: rotateY(90deg);
+}
+
+.row2 {
+    width: 17%;
+    height: 100%;
+    margin-left: 2%;
+    float: left;
+    background-color: rgba(39, 35, 49, 0.97);
+    cursor: pointer;
+}
+
+.row2 .image {
+    width: 85%;
+    height: 97%;
+    margin-left: 7.5%;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: 1s;
+}
+
+.row3 {
+    width: 17%;
+    height: 100%;
+    margin-left: 2%;
+    float: left;
+    background-color: rgba(39, 35, 49, 0.97);
+    cursor: pointer;
+}
+
+.row3 .image {
+    width: 85%;
+    height: 97%;
+    margin-left: 7.5%;
+    margin-top: 10%;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: 1s;
+}
+
+.help {
+    /*margin-left: 2.5%;*/
+    width: 6.5%;
+    height: 100%;
+    /*float: left;*/
+    position: absolute;
+    right: -1%;
+}
+
+.help img {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    width: 90%;
+    height: 19%;
+    position: relative;
+    top: 80%;
+    right: 35%;
+}
+
+/* 返回按钮 */
+.gameBack {
+    width: 15%;
+    height: 20%;
+    background-image: url(../images/games/back_2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 2.875rem;
+}
+
+.gameBack:hover {
+    background-image: url(../images/games/back_1.png);
+}
+
+/* 小游戏字 */
+.bgTop {
+    width: 50%;
+    height: 25%;
+    background-image: url(../images/games/xyx.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    z-index: 2;
+}
+
+/* 游戏内容部分 */
+.gameBorder{
+    width: 104%;
+    height: 90%;
+    border-top: 20px rgba(218,201,177,0.97) solid;
+    border-left: 20px rgba(218,201,177,0.97) solid;
+    border-right: 20px rgba(218,201,177,0.97) solid;
+    border-radius: 50%/60% 60% 0 0;
+    position: absolute;
+    left: -3.5%;
+    bottom: 0;
+}
+.gameContent {
+    width: 97%;
+    height: 97%;
+    margin: 0 auto;
+    border-radius: 50%/60% 60% 0 0;
+    background-color: rgba(218,201,177,0.97);
+    position: relative;
+    top: 3%;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.game01 {
+    width: 24.6%;
+    height: 100%;
+    background-color: #000;
+    float: left;
+    position: relative;
+}
+
+.game01_0 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*margin-top: 4.25rem;*/
+    border-radius: 50% 0 0 0;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.game01_1 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*margin-top: 4.25rem;*/
+    border-radius: 50% 0 0 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 0;
+}
+
+.game01_0:hover {
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.game01_0:hover + .game01_1 {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.game02 {
+    margin-left: 0.5%;
+    width: 24.6%;
+    height: 100%;
+    background-color: #000;
+    float: left;
+    position: relative;
+}
+
+.game02_0 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20% 0 0 0;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.game02_1 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20% 0 0 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 0;
+}
+
+.game02_0:hover {
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.game02_0:hover + .game02_1 {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.game03 {
+    margin-left: 0.5%;
+    width: 24.6%;
+    height: 100%;
+    background-color: #000;
+    float: left;
+    position: relative;
+}
+
+.game03_0 {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    border-radius: 0 20% 0 0;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.game03_1 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 20% 0 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 0;
+}
+
+.game03_0:hover {
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.game03_0:hover + .game03_1 {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.game04 {
+    width: 24.6%;
+    height: 100%;
+    background-color: #000;
+    float: right;
+    position: relative;
+}
+
+.game04_0 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*margin-top: 1%;*/
+    border-radius: 0 50% 0 0;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.game04_1 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*margin-top: 1%;*/
+    border-radius: 0 50% 0 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 0;
+}
+
+.game04_0:hover {
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.game04_0:hover + .game04_1 {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+
+
+
+
+

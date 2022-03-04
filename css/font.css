@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "jdfcs";
+    src: url("../fonts/经典繁超宋.woff") format("woff"),
+    url("../fonts/经典繁超宋.ttf") format("truetype"),
+    url("../fonts/经典繁超宋.eot") format("embedded-opentype"),
+    url("../fonts/经典繁超宋.svg") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "chsj";
+    src: url("../fonts/方正粗黑宋简体.woff") format("woff"),
+    url("../fonts/方正粗黑宋简体.ttf") format("truetype"),
+    url("../fonts/方正粗黑宋简体.eot") format("embedded-opentype"),
+    url("../fonts/方正粗黑宋简体.svg") format("svg");
+
+}

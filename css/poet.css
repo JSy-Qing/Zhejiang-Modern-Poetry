@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    /*background-image: url('../images/background.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    background-color: rgba(144, 55, 62, 0.97);
+    background-image: url("../images/background-flower.png");
+    font-family: "chsj", serif;
+    font-weight: 200;
+}
+
+.left-sides {
+    background-color: rgba(39, 35, 49, 0.97);
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    left: 2%;
+    float: left;
+    font-family: "jdfcs";
+}
+
+.left-line {
+    width: 10%;
+    height: 100%;
+    background-image: url("../images/poets/shuline.png");
+    position: absolute;
+    left: 45%;
+    background-repeat: repeat-y;
+    background-size: 120% 35%;
+}
+
+.side-menu {
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    /*bottom: 0;*/
+    left: 22.5%;
+    list-style-type: none;
+    /*background-color: #2aabd2;*/
+    font-size: 55px;
+    line-height: 65px;
+}
+
+.sp {
+    /*background-color: rgba(218, 201, 177, 0.97);*/
+    margin-top: 30%;
+    float: left;
+    width: 100%;
+    height: 30%;
+    /*border-radius: 5%;*/
+    background-image: url("../images/poets/sp01.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+.sp:hover{
+    background-image: url("../images/poets/sp02.png");
+}
+
+.zp {
+    /*background-color: rgba(218, 201, 177, 0.97);*/
+    margin-top: 40%;
+    float: left;
+    width: 100%;
+    height: 30%;
+    border-radius: 5%;
+    background-image: url("../images/poets/zpj01.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.zp:hover{
+    background-image: url("../images/poets/zpj02.png");
+}
+.back {
+    /*background-color: rgba(218, 201, 177, 0.97);*/
+    margin-top: 40%;
+    float: left;
+    width: 100%;
+    height: 20%;
+    border-radius: 5%;
+    background-image: url("../images/poets/back01.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.back:hover{
+    background-image: url("../images/poets/back02.png");
+}
+.active{
+    margin-top: 30%;
+    float: left;
+    width: 100%;
+    height: 30%;
+    /*border-radius: 5%;*/
+    background-image: url("../images/poets/sp02.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.act{
+    width: 70%;
+    height: 85%;
+    border: 10px rgba(218,201,177,0.97) solid;
+    border-radius: 5%;
+    margin-left: 6%;
+    margin-top: 7%;
+    color: rgba(218,201,177,0.97);
+    text-align: center;
+}
+
+.content {
+    background-image: url("../images/poets/yuejuan.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    position: relative;
+    left: 18%;
+    /*margin-left: 3%;*/
+    border-left: 5px rgba(39, 35, 49, 0.97) solid;
+    border-right: 5px rgba(39, 35, 49, 0.97) solid;
+    width: 70%;
+    height: 100%;
+    overflow: scroll;
+
+}
+
+.content::-webkit-scrollbar {
+    display: none
+}
+
+/* 主内容部分 */
+.spFrame {
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+}
+
+.sp01 {
+    width: 100%;
+    height: 25%;
+    position: relative;
+}
+
+.sp01:first-child {
+    padding-top: 4.375rem;
+}
+
+.sp02 {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.sp02 img {
+    padding-top: 1rem;
+    width: 37.75rem;
+}
+
+/* 人物生平时间 */
+.spTime {
+    width: 25%;
+    height: 40%;
+    background-image: url(../images/poets/time.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 5%;
+    /*font-family: "方正粗黑宋简体";*/
+    font-size: 30px;
+    text-align: center;
+    line-height: 200%;
+    /*background-color: #2aabd2;*/
+    color: #e8dbce;
+}
+
+.spTime::before {
+    content: '';
+    width: 0.875rem;
+    height: 0.875rem;
+    background-image: url(../images/poets/circular.png);
+    position: absolute;
+    left: 110%;
+    top: 0.8125rem;
+}
+
+/* 人物生平主内容 */
+.spContent {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 40%;
+    color: #2c0e11;
+    /*font-family: "方正粗黑宋简体";*/
+    font-size: 28px;
+    line-height: 2.6875rem;
+}
+
+.guxiang {
+    float: left;
+    height: 100%;
+    /*width: 11%;*/
+    width: 11%;
+    position: absolute;
+    right: 0;
+    /*background-image: url("../images/poets/ai.png");*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.lines {
+    position: absolute;
+    left: 22.7%;
+    /*background-color: #2aabd2;*/
+    border-right: 3px rgba(39, 35, 49, 0.97) solid;
+    width: 12.2%;
+    height: 900%;
+}
+/*tab2内容 */
+.last {
+    width: 5%;
+    height: 100%;
+    position: fixed;
+    left: 19%;
+}
+
+.last-content {
+    width: 80%;
+    height: 15%;
+    position: absolute;
+    left: 13%;
+    top: 42.5%;
+    cursor: pointer;
+    background-image: url("../images/poets/last.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+
+}
+
+
+.zp-content1 {
+    width: 70%;
+    float: left;
+    margin-left: 15%;
+    display: block;
+    /*height: 100%;*/
+    /*background-color: #2aabd2;*/
+
+}
+.zp-shi{
+    width: 70%;
+    /*background-color: #2aabd2;*/
+    margin-left: 14%;
+    margin-top: 20%;
+    line-height: 40px;
+    font-weight: lighter;
+}
+.chuangzuo{
+    width: 100%;
+    height: 40%;
+    margin-top: 120%;
+}
+.next {
+    width: 5%;
+    height: 100%;
+    position: fixed;
+    left: 82%;
+
+}
+
+.next-content {
+    width: 80%;
+    height: 15%;
+    position: absolute;
+    /*margin-left: ;*/
+    /*margin-top: 230%;*/
+    left: 13%;
+    top: 42.5%;
+    cursor: pointer;
+    background-image: url("../images/poets/next.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.shi-title{
+    font-size: 35px;
+}
+.zp-content2{
+    width: 70%;
+    float: left;
+    margin-left: 15%;
+    display: none;
+}

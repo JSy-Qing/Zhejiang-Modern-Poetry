@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    /*background-image: url('../images/background.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    background-color: rgba(144, 55, 62, 0.97);
+    background-image: url("../images/background-flower.png");
+    font-family: "chsj", serif;
+    font-weight: 300;
+    word-spacing: 40px
+}
+
+.return {
+    /*margin-left: 2.5%;*/
+    width: 6.5%;
+    height: 100%;
+    /*float: left;*/
+    position: absolute;
+}
+
+.return img {
+    width: 90%;
+    height: 19%;
+    position: relative;
+    top: 80%;
+    left: 35%;
+}
+
+.last {
+    width: 10%;
+    height: 100%;
+    float: left;
+    margin-left: 10%;
+}
+
+.last-content {
+    width: 60%;
+    height: 25%;
+    margin-left: 13%;
+    margin-top: 190%;
+    cursor: pointer;
+}
+
+.last-content img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.topic {
+    width: 63%;
+    height: 100%;
+    background-color: rgba(229, 216, 202, 0.97);
+    background-image: url("../images/ceshi-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    border-left: rgba(39, 35, 49, 0.97) 5px solid;
+    border-right: rgba(39, 35, 49, 0.97) 5px solid;
+    float: left;
+    overflow: hidden;
+
+}
+.topic img{
+    width: 63%;
+    height: 110%;
+    position: absolute;
+    z-index: 1;
+}
+.topic1 {
+    width: 70%;
+    height: 37%;
+    margin-left: 18%;
+    margin-top: 10%;
+}
+
+.qst {
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 1920px) and (min-width:1290px){
+    .qst {
+        font-size: 45px;
+    }
+}
+.op {
+    font-size: 25px;
+    width: 100%;
+    height: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+@media screen and (max-width: 1920px) and (min-width:1290px){
+    .op {
+        font-size: 35px;
+    }
+}
+.topic .answer {
+    margin-left: 7%;
+    margin-top: 25%;
+}
+@media screen and (max-width: 1920px) and (min-width:1290px){
+    .topic .answer {
+        margin-top: 20%;
+    }
+}
+.optionA {
+    width: 15.2%;
+    height: 17%;
+    margin-left: 5%;
+    float: left;
+    background-image: url("../images/a.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.optionB {
+    width: 15.2%;
+    height: 17%;
+    margin-left: 5%;
+    float: left;
+    background-image: url("../images/b.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.optionC {
+    width: 15.2%;
+    height: 17%;
+    margin-left: 5%;
+    float: left;
+    background-image: url("../images/c.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.optionD {
+    width: 15.2%;
+    height: 17%;
+    margin-left: 5%;
+    float: left;
+    background-image: url("../images/d.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.optionA:hover {
+    background-image: url("../images/aR.png");
+}
+
+.optionB:hover {
+    background-image: url("../images/bR.png");
+}
+
+.optionC:hover {
+    background-image: url("../images/cR.png");
+}
+
+.optionD:hover {
+    background-image: url("../images/dR.png");
+}
+
+.next {
+    float: left;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+.next-content {
+    width: 60%;
+    height: 25%;
+    margin-left: 25%;
+    margin-top: 190%;
+    cursor: pointer;
+}
+
+.next-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.rt-img {
+
+    width: 30%;
+    height: 50%;
+    margin-left: 70%;
+    margin-top: -20%;
+}
+
+.bg {
+    width: 30%;
+    height: 50%;
+    margin-left: 80%;
+    margin-top: -10%;
+    background-image: url("../images/right.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.wrongBg {
+    width: 30%;
+    height: 50%;
+    margin-left: 80%;
+    margin-top: -10%;
+    background-image: url("../images/wrong.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.result {
+    width: 100%;
+    height: 100%;
+}

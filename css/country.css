@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("../images/poets/countryBg.png");
+}
+.left{
+    width: 19.5%;
+    height: 100%;
+    float: left;
+
+}
+.left img{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.content{
+    float: left;
+    background-image: url("../images/yellow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 15.5%;
+    /*margin-left: -3.5%;*/
+    z-index: 2;
+}
+.content1{
+    width: 91.5%;
+    height: 100%;
+    /*background-color: #1b6d85;*/
+}
+.tab-content{
+    width: 93.8%;
+    height: 100%;
+    border-right: 4px rgba(39,35,49,0.97) solid;
+    font-size: 30px;
+    line-height: 45px;
+    /*background-color: #2aabd2;*/
+    float: left;
+
+}
+.tab{
+    width: 5%;
+    height: 100%;
+    /*background-color: white;*/
+    /*position: absolute;*/
+    /*left: 35%;*/
+    float: left;
+    z-index: 1;
+}
+.tab-menu{
+    width: 98%;
+    height: 100%;
+    /*background-color: white;*/
+    margin-top: 20%;
+    font-size: 35px;
+    line-height: 70px;
+}
+.tab-menu li{
+    margin-top: 20%;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+.jian{
+    background-image: url("../images/poets/jj01.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.min{
+    background-image: url("../images/poets/ms01.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.tab1{
+    text-align: center;
+    color: #2c0e11;
+}
+.tab1 p{
+    font-family: "chsj", serif;
+    width: 70%;
+    height: 30%;
+    margin: 0 auto;
+    margin-top: 5%;
+
+    text-align: left;
+    /*float: left;*/
+}
+.tab1 img{
+    width: 100%;
+    height: 100%;
+}
+.tab2 p{
+    font-family: "chsj", serif;
+    width: 70%;
+    height: 30%;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: left;
+    color: #2c0e11;
+    /*float: left;*/
+}
+.return{
+    position: absolute;
+    top: 80%;
+    left: 4%;
+    width: 5%;
+    height: 16%;
+    cursor: pointer;
+    background-image: url("../images/poets/countryBack01.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.return:hover{
+    background-image: url("../images/poets/countryBack02.png");
+}

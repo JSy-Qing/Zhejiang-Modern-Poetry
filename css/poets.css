@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(39, 35, 49, 0.97);
+    /*box-sizing: border-box;*/
+}
+
+.border1 {
+    width: 45%;
+    height: 95%;
+    border: 23px rgba(144, 55, 62, 0.97) solid;
+    position: absolute;
+    top: 2.5%;
+    left: 53%;
+}
+@media screen and (max-width: 1920px) and (min-width:1290px){
+    .border1{
+        border: 30px rgba(144, 55, 62, 0.97) solid;
+    }
+}
+.heng {
+    width: 100%;
+    height: 70%;
+    background-image: url("../images/heng-flower.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 15%;
+}
+
+.people {
+    width: 40%;
+    height: 83%;
+    position: absolute;
+    top: 8.5%;
+    left: 55.6%;
+    background-image: url("../images/poets/four.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*@media screen and (max-width: 1920px) and (min-width:1290px){*/
+/*    .people{*/
+/*        left: 58%;*/
+/*    }*/
+/*}*/
+.xuan {
+    /*background-color: rgba(229,216,202,0.97);*/
+    width: 43%;
+    height: 98%;
+    position: relative;
+    top: -67.5%
+}
+
+.xuan ul {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 1%;
+}
+
+.xuan ul li {
+    width: 100%;
+    height: 18%;
+    float: left;
+    list-style-type: none;
+    margin-top: 8%;
+    font-family: "jdfcs";
+    color: rgba(39, 35, 49, 0.97);
+    cursor: pointer;
+}
+
+.lu{
+    background-image: url("../images/poets/lx01.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.ai{
+    background-image: url("../images/poets/aq01.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.dai{
+    background-image: url("../images/poets/dws01.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.xu{
+    background-image: url("../images/poets/xzm01.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.lu:hover {
+    background-image: url("../images/poets/lx02.png");
+}
+
+.ai:hover {
+    background-image: url("../images/poets/aq02.png");
+}
+
+.dai:hover {
+    background-image: url("../images/poets/dws02.png");
+}
+
+.xu:hover {
+    background-image: url("../images/poets/xzm02.png");
+}
+.back-img{
+    position: absolute;
+    left: 10%;
+    width: 40%;
+    height: 100%;
+    background-image: url("../images/poets/srj.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
