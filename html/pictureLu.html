@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微图鉴——鲁迅</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/picturecontent.css">
+</head>
+<body>
+<div class="content1">
+    <div class="pic3"></div>
+    <div class="pic1"><p onclick="jump()">返回</p></div>
+    <div class="pic2"><img src="../images/picture/lu.png"></div>
+</div>
+<div class="content2">
+    <div class="content2-1" onclick="jumpto('ren')">
+        <p><span class="big">人物：鲁迅</span> <br>
+            鲁迅（1881年9月25日-1936年10月19日），原名周樟寿，后改名周树人，原字豫山，后改豫才，曾留学日本仙台医科专门学校（肄业）。“鲁迅”
+            是他1918年发表《狂人日记》时所用的笔名，也是他影响最为广泛的笔名，浙江绍兴人。著名文学家、思想家、革命家、民主战士，五四 新文化运动的重要参与者，中国现代文学的奠基人。
+        </p>
+    </div>
+    <div class="content2-2" onclick="jumpto('dai')">
+        <p><span class="big">代表作品</span> <br>
+            《希望》：以直抒胸臆为基本笔法，结合运用象征隐喻<br>
+            《野草·题辞》：面对北洋军阀下统治的黑暗现实，主要表现了作者的战斗精神。<br>
+            《梦》：<br>
+        </p>
+    </div>
+    <div class="content2-3" onclick="jumpto('guxiang')">
+        <p><span class="big">故乡简介</span> <br>
+            绍兴，浙江省辖地级市，位于浙江省中北部、杭州湾南岸，是具有江南水乡特色的文化和生态旅游城市、首批国家历史文化名城，也是著名的
+            水乡、桥乡、酒乡、书法之乡。
+        </p>
+    </div>
+
+</div>
+<script>
+    function jump() {
+        window.location.href = './picturemenu.html';
+    }
+
+    function jumpto(getobj) {
+        if (getobj == 'ren') {
+            window.location.href = './poetLu.html';
+        } else if (getobj == 'dai') {
+            window.location.href = './poetLu.html';
+        }else if (getobj=='guxiang'){
+            window.location.href='./countryLu.html';
+        }
+    }
+</script>
+</body>
+</html>

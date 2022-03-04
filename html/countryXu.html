@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>故乡游——徐志摩</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/country.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .pic {
+            list-style: none;
+            border: 0;
+        }
+
+        #box {
+            width: 520px;
+            height: 280px;
+            overflow: hidden;
+            margin: 120px auto;
+            position: relative;
+            box-shadow: 10px 10px 5px #888888;
+            border-radius: 10px;
+        }
+
+        #box .pic li {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="content1">
+        <div class="tab-content">
+            <div class="tab1" style="display: block" id="tab1"><p>绍兴，简称“越”，古称越州，是浙江省地级市，国务院批复确定的中国具有
+                江南水乡特色的文化和生态旅游城市 [1] 。截至2018年，全市下辖3个区、1个县、代管2个县级市，总面积8274.79平方千米，常住人
+                口503.5万人，城镇人口335.33万人，城镇化率66.6%，常住外来人口达79万人。</p>
+                <img src="../images/poets/shaoxing.png">
+            </div>
+            <div class="tab2" style="display: none" id="tab2"><p>越剧起源于绍兴。越剧长于抒情，以唱为主，声腔清悠婉丽，优美动听，
+                表演真切动人，极具江南地方色彩。<br>
+                社戏是流行于绍兴的传统民间娱乐风俗，是旧时绍兴城乡春秋两季祭祀社神所演的戏，用以酬神祈福。社戏源于该地农村春秋两季祭祀社
+                神（土地神）习俗。先时，春社为祈求五谷丰登，秋社为庆贺一年丰收，后发展为以演戏酬神祈福，进而沿习为民间文化娱乐活动。绍兴
+                演社戏风俗，早在南宋即已盛行，到清末仍风行一时。
+            </p>
+                <div id="box">
+                    <ul class="pic">
+                        <li><img src="../images/poets/yueju1.jpg" alt=""></li>
+                        <li><img src="../images/poets/yueju2.jpg" alt=""></li>
+                        <li><img src="../images/poets/yueju3.jpg" alt=""></li>
+                        <li><img src="../images/poets/yueju4.jpg" alt=""></li>
+                        <li><img src="../images/poets/yueju5.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <script>
+                    $(function () {
+                        var numberImg = $('.pic li').length;//获取图片的长度
+                        var index = 0;//定义图片初始化个数
+                        setInterval(function () {
+                            index++;
+                            if (index == numberImg) {
+                                index = 0;
+                            }
+                            $('.pic li').eq(index).siblings().css("display", "none");
+                            $('.pic li').eq(index).css("display", "block");
+                        }, 2000);
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="tab">
+            <ul class="tab-menu">
+                <li class="jian" onclick="change('jian')" id="jian"></li>
+                <li class="min" onclick="change('min')" id="min"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="left">
+    <img src="../images/poets/hn.png">
+</div>
+<div class="return" onclick="jump()"></div>
+<script>
+    if (document.getElementById("tab1").style.display == 'block') {
+        document.getElementById("jian").style.backgroundImage='url('+'../images/poets/jj02.png'+')';
+    }
+
+    function change(getTab) {
+        if (getTab == 'jian') {
+            document.getElementById("tab1").style.display = 'block';
+            document.getElementById("tab2").style.display = 'none';
+            document.getElementById("jian").style.backgroundImage='url('+'../images/poets/jj02.png'+')';
+            document.getElementById("min").style.backgroundImage='url('+'../images/poets/ms01.png'+')'
+        } else if (getTab == 'min') {
+            document.getElementById("tab1").style.display = 'none';
+            document.getElementById("tab2").style.display = 'block';
+            document.getElementById("jian").style.backgroundImage='url('+'../images/poets/jj01.png'+')';
+            document.getElementById("min").style.backgroundImage='url('+'../images/poets/ms02.png'+')'
+
+        }
+    }
+
+    function jump() {
+        window.history.go(-1);
+    }
+</script>
+
+</body>
+</html>

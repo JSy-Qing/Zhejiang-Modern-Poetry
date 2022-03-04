@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小游戏</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <script>
+        function back() {
+            window.location.href='./menu.html';
+        }
+        function jump(getobj) {
+            if (getobj=='jian'){
+                window.location.href='../games/PaperCutting/index.html';
+            }else if(getobj=='yue'){
+                window.location.href='../games/YueOpera/index.html';
+            }else if (getobj=='puzzle'){
+                window.location.href='../games/Pottery/index.html';
+            }else if (getobj=='yao'){
+                window.location.href='../games/puzzle/index.html';
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="bgTop"></div>
+<div class="gameBack" onclick="back()"></div>
+<div class="gameBorder">
+    <div class="gameContent">
+        <div class="game01" onclick="jump('jian')">
+            <img src="../images/games/game01.png" alt="" class="game01_0">
+            <img src="../images/games/game01_1.png" alt="" class="game01_1">
+        </div>
+        <div class="game02" onclick="jump('yue')">
+            <img src="../images/games/game02.png" alt="" class="game02_0">
+            <img src="../images/games/game02_1.png" alt="" class="game02_1">
+        </div>
+        <div class="game04" onclick="jump('puzzle')">
+            <img src="../images/games/game04.png" alt="" class="game04_0">
+            <img src="../images/games/game04_1.png" alt="" class="game04_1">
+        </div>
+        <div class="game03" onclick="jump('yao')">
+            <img src="../images/games/game03.png" alt="" class="game03_0">
+            <img src="../images/games/game03_1.png" alt="" class="game03_1">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

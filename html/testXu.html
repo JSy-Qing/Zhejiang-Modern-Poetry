@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试题——徐志摩</title>
+    <link rel="stylesheet" href="../css/test.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <script type="text/javascript" src="../js/testXu.js"></script>
+    <script>
+        function back() {
+            window.location.href='./testMenu.html';
+        }
+    </script>
+</head>
+<body>
+<div class="return">
+    <img src="../images/ceshi-back.png" onclick="back()" style="cursor: pointer">
+</div>
+<div class="last">
+    <div class="last-content">
+        <img src="../images/last.png" onclick="showLastQuestion()">
+    </div>
+</div>
+<div class="topic">
+    <div class="topic1">
+        <p class="qst" id="qst">1、鲁迅先生出生于浙江__________。</p>
+        <p class="op" id="opa">A.杭州</p>
+        <p class="op" id="opb">B.绍兴</p>
+        <p class="op" id="opc">C.金华</p>
+        <p class="op" id="opd">D.海宁</p>
+        <div class="rt-img" id="rt"></div>
+    </div>
+    <div class="answer">
+        <div class="optionA" id="optionA" onclick="showResult('A')">
+
+        </div>
+        <div class="optionB" id="optionB" onclick="showResult('B')">
+
+        </div>
+        <div class="optionC" id="optionC" onclick="showResult('C')">
+
+        </div>
+        <div class="optionD" id="optionD" onclick="showResult('D')">
+
+        </div>
+    </div>
+</div>
+<div class="next">
+    <div class="next-content">
+        <img src="../images/next.png" onclick="showNextQuestion()">
+    </div>
+</div>
+</body>
+</html>

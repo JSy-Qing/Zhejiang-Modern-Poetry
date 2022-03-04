@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <script>
+        function jump(addr) {
+            if(addr=='A'){
+                window.location.href="./poetsMenu.html";
+            }else if(addr=='B'){
+                window.location.href="./picturemenu.html";
+            }else if(addr=='C'){
+                window.location.href="./testMenu.html";
+            }else if(addr=='D'){
+                window.location.href="./gamesMenu.html";
+            }
+        }
+        function back() {
+            window.location.href="../index.html";
+        }
+    </script>
+</head>
+<body>
+<div class="content">
+    <div class="back" onclick="back()">
+        <img src="../images/back01.png">
+    </div>
+    <div class="row1" onclick="jump('A')">
+        <div class="image">
+            <div class="yfront">
+                <img src="../images/srj01.png">
+            </div>
+            <div class="yback">
+                <img src="../images/srj02.png">
+            </div>
+        </div>
+    </div>
+    <div class="row2" onclick="jump('C')">
+        <div class="image">
+            <div class="yfront">
+                <img src="../images/cst01.png">
+            </div>
+            <div class="yback">
+                <img src="../images/cst02.png">
+            </div>
+        </div>
+    </div>
+    <div class="row3" onclick="jump('B')">
+        <div class="image">
+            <div class="yfront">
+                <img src="../images/wtj01.png">
+            </div>
+            <div class="yback">
+                <img src="../images/wtj02.png">
+            </div>
+        </div>
+    </div>
+    <div class="row2" onclick="jump('D')">
+        <div class="image">
+            <div class="yfront">
+                <img src="../images/xyx01.png">
+            </div>
+            <div class="yback">
+                <img src="../images/xyx02.png">
+            </div>
+        </div>
+    </div>
+<!--    <div class="help">-->
+<!--        <img src="../images/help.png">-->
+<!--    </div>-->
+</div>
+</body>
+</html>

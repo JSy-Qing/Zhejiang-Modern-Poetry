@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>诗人集</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/poets.css">
+</head>
+<body>
+<div class="border1">
+</div>
+<div class="heng">
+</div>
+<div class="people" id="people">
+</div>
+<div class="xuan">
+    <ul>
+        <li class="lu" onmouseover="change('lu')" onmouseout="nomChange()" onclick="jump('lu')"><</li>
+        <li class="ai" onmouseover="change('ai')" onmouseout="nomChange()" onclick="jump('ai')"></li>
+        <li class="xu" onmouseover="change('xu')" onmouseout="nomChange()" onclick="jump('xu')"></li>
+        <li class="dai" onmouseover="change('dai')" onmouseout="nomChange()" onclick="jump('dai')"></li>
+    </ul>
+    <div class="back-img" onclick="back()">
+    </div>
+</div>
+<script>
+    function change(objs) {
+        if (objs=='lu'){
+            document.getElementById("people").style.backgroundImage = 'url('+'../images/poets/lx.png'+')';
+        }else if(objs=='ai'){
+            document.getElementById("people").style.backgroundImage = 'url('+'../images/poets/aq.png'+')';
+        }else if(objs=='xu'){
+            document.getElementById("people").style.backgroundImage = 'url('+'../images/poets/xzm.png'+')';
+        }else if(objs=='dai'){
+            document.getElementById("people").style.backgroundImage = 'url('+'../images/poets/dws.png'+')';
+        }
+    }
+    function nomChange() {
+        document.getElementById("people").style.backgroundImage = '';
+    }
+    function jump(getobj) {
+        if(getobj=='lu'){
+            window.location.href='./poetLu.html';
+        }else if(getobj=='dai'){
+            window.location.href='./poetDai.html';
+        }else if(getobj=='ai'){
+            window.location.href='./poetAi.html';
+        }else{
+            window.location.href='./poetXu.html';
+        }
+    }
+    function back() {
+        window.location.href='./menu.html';
+    }
+</script>
+</body>
+</html>

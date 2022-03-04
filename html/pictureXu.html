@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微图鉴——徐志摩</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/picturecontent.css">
+</head>
+<body>
+<div class="content1">
+    <div class="pic3"></div>
+    <div class="pic1"><p onclick="jump()">返回</p></div>
+    <div class="pic2"><img src="../images/picture/xu.png"></div>
+</div>
+<div class="content2">
+    <div class="content2-1">
+        <p><span class="big" onclick="jumpto('ren')">人物：徐志摩</span> <br>
+            徐志摩（1897年1月15日—1931年11月19日），原名章垿，字槱森，浙江嘉兴海宁硖石人，现代诗人、散文家，新月派代表诗人。在剑桥两年深受西方教育的熏陶及欧美浪漫主义和唯美派诗人的影响，奠定其浪漫主义诗风。
+        </p>
+    </div>
+    <div class="content2-2">
+        <p><span class="big" onclick="jumpto('dai')">代表作品</span> <br>
+            《再别康桥》：<br>
+            《》：<br>
+            《》：
+        </p>
+    </div>
+    <div class="content2-3">
+        <p><span class="big" onclick="jumpto('guxiang')">故乡简介</span> <br>
+            海宁市位于中国长江三角洲南翼、浙江省北部，为浙江省下辖县级市，是著名的历史文化名城，经济较为发达，为全国最具实力的县市之一。
+        </p>
+    </div>
+</div>
+<script>
+    function jump() {
+        window.location.href='./picturemenu.html';
+    }
+    function jumpto(getobj) {
+        if (getobj == 'ren') {
+            window.location.href = './poetXu.html';
+        } else if (getobj == 'dai') {
+            window.location.href = './poetXu.html';
+        }else if (getobj=='guxiang'){
+            window.location.href='./countryXu.html';
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微图鉴</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/picture.css">
+    <script>
+        function jump(getobj) {
+            if(getobj=='lu'){
+                window.location.href='./pictureLu.html';
+            }else if(getobj=='dai'){
+                window.location.href='./pictureDai.html';
+            }else if(getobj=='ai'){
+                window.location.href='./pictureAi.html';
+            }else{
+                window.location.href='./pictureXu.html';
+            }
+        }
+        function back() {
+            window.location.href='./menu.html';
+        }
+    </script>
+</head>
+<body>
+<div class="background">
+    <div class="logo1">
+    </div>
+    <div class="back" onclick="back()">
+    </div>
+    <div class="content">
+        <div class="atlas01" onclick="jump('lu')">
+            <div class="atlas01_top"><img src="../images/picture/atlas01_top.png"></div>
+            <div class="atlas01_center">
+                <div class="atlas01_center_">
+                    <img src="../images/picture/atlas01.png" alt="" class="atlas01_0">
+                    <img src="../images/picture/atlas01_1.png" alt="" class="atlas01_1">
+                </div>
+            </div>
+            <div class="atlas01_bottom"><img src="../images/picture/atlas01_bottom.png"></div>
+        </div>
+
+        <div class="atlas02" onclick="jump('ai')">
+            <div class="atlas02_top"><img src="../images/picture/atlas01_top.png"></div>
+            <div class="atlas02_center">
+                <div class="atlas02_center_">
+                    <img src="../images/picture/atlas02.png" alt="" class="atlas02_0">
+                    <img src="../images/picture/atlas02_1.png" alt="" class="atlas02_1">
+                </div>
+            </div>
+            <div class="atlas02_bottom"><img src="../images/picture/atlas01_bottom.png"></div>
+        </div>
+
+        <div class="atlas04" onclick="jump('xu')">
+            <div class="atlas04_top"><img src="../images/picture/atlas01_top.png"></div>
+            <div class="atlas04_center">
+                <div class="atlas04_center_">
+                    <img src="../images/picture/atlas04.png" alt="" class="atlas04_0">
+                    <img src="../images/picture/atlas04_1.png" alt="" class="atlas04_1">
+                </div>
+            </div>
+            <div class="atlas04_bottom"><img src="../images/picture/atlas01_bottom.png"></div>
+        </div>
+
+        <div class="atlas03" onclick="jump('dai')">
+            <div class="atlas03_top"><img src="../images/picture/atlas01_top.png"></div>
+            <div class="atlas03_center">
+                <div class="atlas03_center_">
+                    <img src="../images/picture/atlas03.png" alt="" class="atlas03_0">
+                    <img src="../images/picture/atlas03_1.png" alt="" class="atlas03_1">
+                </div>
+            </div>
+            <div class="atlas03_bottom"><img src="../images/picture/atlas01_bottom.png"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

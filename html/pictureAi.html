@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微图鉴——艾青</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/picturecontent.css">
+</head>
+<body>
+<div class="content1">
+    <div class="pic3"></div>
+    <div class="pic1"><p onclick="jump()">返回</p></div>
+    <div class="pic2"><img src="../images/picture/ai.png"></div>
+</div>
+<div class="content2">
+    <div class="content2-1" onclick="jumpto('ren')">
+        <p><span class="big">人物：艾青</span> <br>
+            艾青（原名蒋正涵，1910年3月27日-1996年5月5日），号海澄，出生于浙江金华，毕业于国立杭州西湖艺术院，中国作家协会原副主席，中国现代文学家，中国现代诗的代表诗人之一。
+        </p>
+    </div>
+    <div class="content2-2">
+        <p><span class="big" onclick="jumpto('dai')">代表作品</span> <br>
+            《大堰河——我的保姆》：这首诗是艾青把思想感情和艺术个性真正融入民族生活大地的重要转折点，表现了他对旧世界的叛逆和诅咒。<br>
+            《我爱这土地》：生于斯、歌于斯、葬于斯，念兹在兹，至死不渝。<br>
+            《向太阳》：采用革命现实主义和革命浪漫主义相结合的手法，抒发抗战高潮到来之时的激奋之情。
+        </p>
+    </div>
+    <div class="content2-3">
+        <p><span class="big" onclick="jumpto('guxiang')">故乡简介</span> <br>
+            金华（简称：金），古称婺州，浙江省地级市，是国家级历史文化名城、中国十佳宜居城市之一、G60科创走廊中心城市，因其“地处金星与婺女两星争华之处”得名金华。
+        </p>
+    </div>
+
+</div>
+<script>
+    function jump() {
+        window.location.href='./picturemenu.html';
+    }
+    function jumpto(getobj) {
+        if (getobj == 'ren') {
+            window.location.href = './poetAi.html';
+        } else if (getobj == 'dai') {
+            window.location.href = './poetAi.html';
+        }else if (getobj=='guxiang'){
+            window.location.href='./countryAi.html';
+        }
+    }
+</script>
+</body>
+</html>

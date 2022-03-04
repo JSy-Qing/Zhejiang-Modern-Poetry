@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微图鉴——戴望舒</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/picturecontent.css">
+</head>
+<body>
+<div class="content1">
+    <div class="pic3"></div>
+    <div class="pic1"><p onclick="jump()">返回</p></div>
+    <div class="pic2"><img src="../images/picture/dai.png"></div>
+</div>
+<div class="content2">
+    <div class="content2-1">
+        <p><span class="big" onclick="jumpto('ren')">人物：戴望舒</span> <br>
+            戴望舒（1905年11月5日－1950年2月28日），男，名承，字朝安，小名海山，浙江省杭州市人。后曾用笔名梦鸥、梦鸥生、信芳、江思等。中国现代派象征主义诗人、翻译家等。
+        </p>
+    </div>
+    <div class="content2-2">
+        <p><span class="big" onclick="jumpto('dai')">代表作品</span> <br>
+            《雨巷》：在孤寂中咀嚼着大革命失败后的幻灭与痛苦，心中充满了迷惘的情绪和朦胧的希望。<br>
+            《我用残损的手掌》：一方面表现对祖国命运的深切关注，另一方面抒写解放区的明丽，对象征着 “永恒的中国”的土地，发出深情赞美。<br>
+            《游子谣》：本诗以游子的情感构成往复不已的循环：乡愁不断地萌生，又不断地被理智所抑制。
+        </p>
+    </div>
+    <div class="content2-3">
+        <p><span class="big" onclick="jumpto('guxiang')">故乡简介</span> <br>
+            杭州（简称“杭”），浙江省省会，位于中国东南沿海、浙江省北部。杭州是浙江省的政治、经济、文化、教育、交通和金融中心，也是长江三角洲城市群中心城市之一、环杭州湾大湾区核心城市、长三角宁杭生态经济带节点城市、中国重要的电子商务中心之一。
+        </p>
+    </div>
+</div>
+<script>
+    function jump() {
+        window.location.href='./picturemenu.html';
+    }
+    function jumpto(getobj) {
+        if (getobj == 'ren') {
+            window.location.href = './poetDai.html';
+        } else if (getobj == 'dai') {
+            window.location.href = './poetDai.html';
+        }else if (getobj=='guxiang'){
+            window.location.href='./countryDai.html';
+        }
+    }
+</script>
+</body>
+</html>
